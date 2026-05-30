@@ -1,0 +1,336 @@
+/* Trust Banner */
+.trust-section {
+  position: relative;
+  max-width: 1120px;
+  margin: 0 auto;
+  min-height: 330px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-image: url("/trust-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.trust-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 14, 31, 0.9) 0%,
+    rgba(0, 72, 138, 0.68) 45%,
+    rgba(3, 15, 31, 0.82) 100%
+  );
+}
+
+.trust-content {
+  position: relative;
+  z-index: 2;
+  padding: 54px 36px 36px;
+}
+
+.trust-eyebrow {
+  color: #9bd8ff;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.4px;
+  margin: 0 0 8px;
+}
+
+.trust-content h2 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 45px;
+  line-height: 0.98;
+  font-weight: 950;
+  letter-spacing: -1.4px;
+}
+
+.trust-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-top: 44px;
+}
+
+.trust-card {
+  min-height: 135px;
+  padding: 22px 18px;
+  border-radius: 8px;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.22),
+    rgba(255, 255, 255, 0.06)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(8px);
+  color: #ffffff;
+  transition: 0.28s ease;
+}
+
+.trust-card:hover {
+  transform: translateY(-7px);
+  background: rgba(11, 147, 220, 0.35);
+  border-color: rgba(155, 216, 255, 0.75);
+}
+
+.trust-icon {
+  width: 34px;
+  height: 34px;
+  color: #bce6ff;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.trust-card h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.trust-card p {
+  margin: 4px 0 0;
+  font-size: 11px;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+/* Manufacturing Services */
+.manufacturing-section {
+  background: #f4f4f5;
+  padding: 82px 18px 58px;
+}
+
+.manufacturing-container {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.manufacturing-container h2 {
+  text-align: center;
+  margin: 0 0 42px;
+  color: #14213d;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -0.6px;
+}
+
+.manufacturing-container h2 span {
+  color: #14213d;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  min-height: 178px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(16, 24, 40, 0.14);
+}
+
+.service-content {
+  position: relative;
+  padding: 22px 16px 16px 22px;
+}
+
+.service-number {
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  color: #e2e5eb;
+  font-size: 43px;
+  line-height: 1;
+  font-weight: 950;
+  letter-spacing: -1px;
+  z-index: 0;
+}
+
+.service-content h3 {
+  position: relative;
+  z-index: 1;
+  margin: 42px 0 8px;
+  color: #111827;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 950;
+}
+
+.service-content p {
+  position: relative;
+  z-index: 1;
+  color: #667085;
+  font-size: 9.5px;
+  line-height: 1.55;
+  margin: 0 0 12px;
+}
+
+.know-more-btn {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b93dc;
+  border: 1px solid #0b93dc;
+  background: #ffffff;
+  font-size: 9px;
+  font-weight: 900;
+  padding: 7px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.know-more-btn:hover {
+  color: #ffffff;
+  background: #0b93dc;
+}
+
+.service-image-link {
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-image-link img {
+  width: 100%;
+  height: 100%;
+  min-height: 178px;
+  object-fit: cover;
+  display: block;
+  transition: 0.35s ease;
+}
+
+.service-card:hover img {
+  transform: scale(1.08);
+}
+
+.all-services-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 34px;
+}
+
+.all-services-btn {
+  background: #0b93dc;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 12px 26px;
+  border-radius: 5px;
+  transition: 0.25s ease;
+}
+
+.all-services-btn:hover {
+  background: #0074b8;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .trust-section {
+    margin: 0 18px;
+  }
+
+  .trust-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+  .trust-section {
+    border-radius: 0;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .trust-content {
+    padding: 42px 20px 26px;
+  }
+
+  .trust-content h2 {
+    font-size: 34px;
+  }
+
+  .trust-cards {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 34px;
+  }
+
+  .trust-card {
+    min-height: 122px;
+    padding: 18px 14px;
+  }
+
+  .manufacturing-section {
+    padding: 58px 14px 48px;
+  }
+
+  .manufacturing-container h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .service-card {
+    grid-template-columns: 1fr;
+  }
+
+  .service-image-link {
+    order: -1;
+  }
+
+  .service-image-link img {
+    min-height: 210px;
+    height: 210px;
+  }
+
+  .service-content {
+    padding: 20px;
+  }
+
+  .service-content h3 {
+    margin-top: 38px;
+    font-size: 18px;
+  }
+
+  .service-content p {
+    font-size: 11px;
+  }
+
+  .know-more-btn {
+    font-size: 10px;
+    padding: 8px 14px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 420px) {
+  .trust-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-content h2 {
+    font-size: 30px;
+  }
+}
